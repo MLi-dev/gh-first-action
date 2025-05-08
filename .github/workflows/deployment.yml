@@ -31,7 +31,7 @@ jobs:
       - name: Deploy
         run: echo "Deploying ..."
   deployToProduction:
-    needs: test
+    needs: deployToDev
     runs-on: ubuntu-latest
     steps:
       - name: Get code
