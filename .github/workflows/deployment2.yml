@@ -1,5 +1,8 @@
 name: Deployment Exercise 2
-on: push
+on:
+  push:
+    paths-ignore:
+      - ".github/workflows/*"
 jobs:
   lint:
     runs-on: ubuntu-latest
